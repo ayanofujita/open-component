@@ -1,0 +1,68 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700");
+@import url("https://use.fontawesome.com/releases/v6.1.2/css/all.css");
+
+/* Components */
+/* @import url("components/name_of_component.css"); */
+@import url(components/side-nav.css);
+@import url(components/top-nav.css);
+@import url(components/card.css);
+@import url(components/footer.css);
+
+
+body {
+  margin: 0;
+  /* margin-bottom: 100px; */
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  font-size: 14px;
+  color: #515151;
+}
+
+.grandmother {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mother {
+  display: flex;
+  flex-grow: 1;
+}
+
+.right {
+  flex-grow: 1;
+  background-image: radial-gradient(rgb(224, 224, 224), rgba(255, 255, 255, 1));
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: scroll; */
+}
+
+.right > h1 {
+  margin: 20px;
+}
+
+@media (max-width: 840px) {
+  .side-nav {
+    display: none;
+  }
+
+  .bar i:first-of-type {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .account-info, .bar p:last-of-type {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  .bar p:first-of-type {
+    display: none;
+  }
+
+  .bar i:nth-child(2) {
+    flex-grow: 1;
+  }
+}

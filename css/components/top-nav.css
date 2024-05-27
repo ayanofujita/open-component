@@ -1,0 +1,71 @@
+.top-nav {
+  background-color: #FDFDFD;
+  box-shadow: 0 1px 1px rgba(141, 141, 141, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 6px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bar p:first-of-type {
+  flex-grow: 1;
+}
+
+.bar i:first-of-type {
+  display: none;
+}
+
+.bar p {
+  margin: 0;
+}
+
+.bar i, .bar img {
+  margin: auto 10px;
+}
+
+.bar img {
+  height: 20px;
+  width: 26px;
+}
+
+/* ACCOUNT ------------*/
+.account {
+  display: flex;
+  align-items: center;
+  box-shadow: -1px 0 1px rgba(141, 141, 141, 0.5);
+}
+
+.account > img {
+  border-radius: 50%;
+  width: 40px;
+  margin: 8px 8px 8px 16px;
+}
+
+.account p {
+  margin: 0;
+}
+
+.name {
+  font-weight: bold;
+  color: black;
+  font-size: small;
+}
+
+.account-info {
+  font-size: x-small;
+  width: 85px;
+  margin-right: 16px;
+}
+
+.account i {
+  margin-right: 16px;
+}
